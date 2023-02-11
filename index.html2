@@ -1,0 +1,499 @@
+<!DOCTYPEhtml >
+< html  lang =" es " > < encabezado >
+    < juego de caracteres meta  =" UTF-8 " > 
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    
+    < título > ServerPro </ título >
+<!-- Código inyectado por el servidor en vivo -->
+< guión >
+	// <![CDATA[ <-- Para compatibilidad con SVG
+	if  ( 'WebSocket'  en  la ventana )  {
+		( función  ( )  {
+			función  actualizar CSS ( )  {
+				var  hojas  =  [ ] . rebanada _ llamada ( documento . getElementsByTagName ( "enlace" ) ) ;
+				 cabeza  var =  documento . getElementsByTagName ( "cabeza" ) [ 0 ] ;
+				for  ( var  i  =  0 ;  i  <  hojas . longitud ;  ++ i )  {
+					var  elem  =  hojas [ i ] ;
+					var  padre  =  elemento . elemento padre  ||  cabeza ;
+					padre _ removeChild ( elem ) ;
+					varrel  = elemento . _  real ; 
+					if  ( elem . href  &&  typeof  rel  !=  "string"  ||  rel . length  ==  0  ||  rel . toLowerCase ( )  ==  "stylesheet" )  {
+						var  url  =  elemento . href . reemplazar ( / ( & | \? ) _cacheOverride= \d + / ,  '' ) ;
+						elemento _ href  =  url  +  ( url . indexOf ( '?' )  >=  0 ? '&' : '?' )  +  '_cacheOverride='  +  ( nueva  Fecha ( ) . valueOf ( ) ) ;
+					}
+					padre _ agregarNiño ( elemento ) ;
+				}
+			}
+			var  protocolo  =  ventana . ubicación _ protocolo  ===  'http:' ? 'ws://' : 'wss://' ;
+			var  dirección  =  protocolo  +  ventana . ubicación _ anfitrión  +  ventana . ubicación _ nombre de ruta  +  '/ws' ;
+			var  socket  =  nuevo  WebSocket ( dirección ) ;
+			enchufe _ enmensaje  =  función  ( mensaje )  {
+				if  ( msg . data  ==  'reload' )  ventana . ubicación _ recargar ( ) ;
+				else  if  ( msg . data  ==  'refreshcss' )  refreshCSS ( ) ;
+			} ;
+			if  ( almacenamiento de sesión  &&  ! almacenamiento de sesión . getItem ( 'EsEstaPrimeraVez_Registrar_Desde_ServidorLive' ) )  {
+				consola _ log ( 'Recarga en vivo habilitada.' ) ;
+				sesiónAlmacenamiento . setItem ( 'EsEstaPrimeraHora_Registro_Desde_LiveServer' ,  verdadero ) ;
+			}
+		} ) ( ) ;
+	}
+	más  {
+		consola _ error ( 'Actualice su navegador. Este navegador NO es compatible con WebSocket para Live-Reloading.' ) ;
+	}
+	// ]]>
+</ guión >
+< link  rel =" hoja de estilo " href =" http://127.0.0.1:5500/style.css?_cacheOverride=1676104622800 " > </ head >
+< cuerpo >
+
+    < div  clase =" cabeza " >
+
+         < div  clase =" logotipo " >
+            < a  herf =" a " > logotipo </ a >
+
+         </div> _ _
+         
+         < br >
+
+         < clase de navegación  =" barra de navegación " >
+              < a  href =" https://skmedix.pl/sklauncher/downloads " > Lanzador de Java </ a >
+              < a  href =" a " > Puerto </ a >
+              < a  href =" a " > IP de Java </ a >
+              < a  href =" https://discord.gg/fXgD4Pd7 " > Discordia </ a >
+         </ nav >
+
+
+    </div> _ _
+    < clase de encabezado  =" encabezado de contenido " >
+        < h2  clase =" título " > ServerPro </ h2 >
+        <pag> _ _
+            Este es un servidor multiplataforma(puedes jugar en Java&Bedrook), es un servidor vanila,
+             no cuenta con mods pero tiene algunos
+            pluigns que solo modifican la estetica del tabulador(es solo para la version mas nueva).
+        </ p >   
+
+        < div  class =" btn-home " >
+            < a  href =" https://www.mediafire.com/file/2avokvcyg8vb5b4/Textura.rar/file " class =" btn " > Descarga este archivo si eres de Java </ a >
+            < a  href =" https://www.mediafire.com/file/mkdv9dez276vntx/Textura%25282%2529.rar/file " class =" btn " > Descarga este archivo si eres de Bedrook </ a >
+
+
+        </div> _ _
+
+</ encabezado >
+
+
+< sección >
+ 
+    
+
+</ sección >
+
+< sección  clase =" contenido sobre " >
+
+    < h3  class = " Titulo " > Mas informacion </h3>
+    < a  href ="" < p ="" > < p > </ p >
+
+    </ a > < a  href =" # " class =" btn " > Haga clic en </ a >     
+
+
+</ sección >
+
+< sección  clase =" contenido contacto " >
+     < h2  clase =" título " > Gmail </ h2 >
+     < p > ChingaTuMadreDylan@gmail.com </ p >
+     < br >
+      < clase de figura  =" mapa " >
+        < img  src =" https://www.google.com.mx/maps/place/Guason+Stairs/@40.8357516, " height =" 220px " width =" 100% " alt =" MAPA " >
+      </ figura >
+
+
+
+</ sección >
+
+
+
+
+     
+
+
+
+
+
+</ cuerpo > </ html >
+< cabeza >
+    < juego de caracteres meta  =" UTF-8 " > 
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    
+    < título > ServerPro </ título >
+<!-- Código inyectado por el servidor en vivo -->
+< guión >
+	// <![CDATA[ <-- Para compatibilidad con SVG
+	if  ( 'WebSocket'  en  la ventana )  {
+		( función  ( )  {
+			función  actualizar CSS ( )  {
+				var  hojas  =  [ ] . rebanada _ llamada ( documento . getElementsByTagName ( "enlace" ) ) ;
+				 cabeza  var =  documento . getElementsByTagName ( "cabeza" ) [ 0 ] ;
+				for  ( var  i  =  0 ;  i  <  hojas . longitud ;  ++ i )  {
+					var  elem  =  hojas [ i ] ;
+					var  padre  =  elemento . elemento padre  ||  cabeza ;
+					padre _ removeChild ( elem ) ;
+					varrel  = elemento . _  real ; 
+					if  ( elem . href  &&  typeof  rel  !=  "string"  ||  rel . length  ==  0  ||  rel . toLowerCase ( )  ==  "stylesheet" )  {
+						var  url  =  elemento . href . reemplazar ( / ( & | \? ) _cacheOverride= \d + / ,  '' ) ;
+						elemento _ href  =  url  +  ( url . indexOf ( '?' )  >=  0 ? '&' : '?' )  +  '_cacheOverride='  +  ( nueva  Fecha ( ) . valueOf ( ) ) ;
+					}
+					padre _ agregarNiño ( elemento ) ;
+				}
+			}
+			var  protocolo  =  ventana . ubicación _ protocolo  ===  'http:' ? 'ws://' : 'wss://' ;
+			var  dirección  =  protocolo  +  ventana . ubicación _ anfitrión  +  ventana . ubicación _ nombre de ruta  +  '/ws' ;
+			var  socket  =  nuevo  WebSocket ( dirección ) ;
+			enchufe _ enmensaje  =  función  ( mensaje )  {
+				if  ( msg . data  ==  'reload' )  ventana . ubicación _ recargar ( ) ;
+				else  if  ( msg . data  ==  'refreshcss' )  refreshCSS ( ) ;
+			} ;
+			if  ( almacenamiento de sesión  &&  ! almacenamiento de sesión . getItem ( 'EsEstaPrimeraVez_Registrar_Desde_ServidorLive' ) )  {
+				consola _ log ( 'Recarga en vivo habilitada.' ) ;
+				sesiónAlmacenamiento . setItem ( 'EsEstaPrimeraHora_Registro_Desde_LiveServer' ,  verdadero ) ;
+			}
+		} ) ( ) ;
+	}
+	más  {
+		consola _ error ( 'Actualice su navegador. Este navegador NO es compatible con WebSocket para Live-Reloading.' ) ;
+	}
+	// ]]>
+</ guión >
+< link  rel =" hoja de estilo " href =" http://127.0.0.1:5500/style.css?_cacheOverride=1676104622800 " > </ head >
+< cuerpo >
+
+    < div  clase =" cabeza " >
+
+         < div  clase =" logotipo " >
+            < a  herf =" a " > logotipo </ a >
+
+         </div> _ _
+         
+         < br >
+
+         < clase de navegación  =" barra de navegación " >
+              < a  href =" https://skmedix.pl/sklauncher/downloads " > Lanzador de Java </ a >
+              < a  href =" a " > Puerto </ a >
+              < a  href =" a " > IP de Java </ a >
+              < a  href =" https://discord.gg/fXgD4Pd7 " > Discordia </ a >
+         </ nav >
+
+
+    </div> _ _
+    < clase de encabezado  =" encabezado de contenido " >
+        < h2  clase =" título " > ServerPro </ h2 >
+        <pag> _ _
+            Este es un servidor multiplataforma(puedes jugar en Java&Bedrook), es un servidor vanila,
+             no cuenta con mods pero tiene algunos
+            pluigns que solo modifican la estetica del tabulador(es solo para la version mas nueva).
+        </ p >   
+
+        < div  class =" btn-home " >
+            < a  href =" https://www.mediafire.com/file/2avokvcyg8vb5b4/Textura.rar/file " class =" btn " > Descarga este archivo si eres de Java </ a >
+            < a  href =" https://www.mediafire.com/file/mkdv9dez276vntx/Textura%25282%2529.rar/file " class =" btn " > Descarga este archivo si eres de Bedrook </ a >
+
+
+        </div> _ _
+
+</ encabezado >
+
+
+< sección >
+ 
+    
+
+</ sección >
+
+< sección  clase =" contenido sobre " >
+
+    < h3  class = " Titulo " > Mas informacion </h3>
+    < a  href ="" < p ="" > < p > </ p >
+
+    </ a > < a  href =" # " class =" btn " > Haga clic en </ a >     
+
+
+</ sección >
+
+< sección  clase =" contenido contacto " >
+     < h2  clase =" título " > Gmail </ h2 >
+     < p > ChingaTuMadreDylan@gmail.com </ p >
+     < br >
+      < clase de figura  =" mapa " >
+        < img  src =" https://www.google.com.mx/maps/place/Guason+Stairs/@40.8357516, " height =" 220px " width =" 100% " alt =" MAPA " >
+      </ figura >
+
+
+
+</ sección >
+
+
+
+
+     
+
+
+
+
+
+</ cuerpo >
+< div  clase =" cabeza " >
+
+         < div  clase =" logotipo " >
+            < a  herf =" a " > logotipo </ a >
+
+         </div> _ _
+         
+         < br >
+
+         < clase de navegación  =" barra de navegación " >
+              < a  href =" https://skmedix.pl/sklauncher/downloads " > Lanzador de Java </ a >
+              < a  href =" a " > Puerto </ a >
+              < a  href =" a " > IP de Java </ a >
+              < a  href =" https://discord.gg/fXgD4Pd7 " > Discordia </ a >
+         </ nav >
+
+
+    </div> _ _
+< clase de encabezado  =" encabezado de contenido " >
+        < h2  clase =" título " > ServerPro </ h2 >
+        <pag> _ _
+            Este es un servidor multiplataforma(puedes jugar en Java&Bedrook), es un servidor vanila,
+             no cuenta con mods pero tiene algunos
+            pluigns que solo modifican la estetica del tabulador(es solo para la version mas nueva).
+        </ p >   
+
+        < div  class =" btn-home " >
+            < a  href =" https://www.mediafire.com/file/2avokvcyg8vb5b4/Textura.rar/file " class =" btn " > Descarga este archivo si eres de Java </ a >
+            < a  href =" https://www.mediafire.com/file/mkdv9dez276vntx/Textura%25282%2529.rar/file " class =" btn " > Descarga este archivo si eres de Bedrook </ a >
+
+
+        </div> _ _
+
+</ encabezado >
+< sección >
+ 
+    
+
+</ sección >
+< sección  clase =" contenido sobre " >
+
+    < h3  class = " Titulo " > Mas informacion </h3>
+    < a  href ="" < p ="" > < p > </ p >
+
+    </ a > < a  href =" # " class =" btn " > Haga clic en </ a >     
+
+
+</ sección >
+< sección  clase =" contenido contacto " >
+     < h2  clase =" título " > Gmail </ h2 >
+     < p > ChingaTuMadreDylan@gmail.com </ p >
+     < br >
+      < clase de figura  =" mapa " >
+        < img  src =" https://www.google.com.mx/maps/place/Guason+Stairs/@40.8357516, " height =" 220px " width =" 100% " alt =" MAPA " >
+      </ figura >
+
+
+
+</ sección >
+< cuerpo >
+
+    < div  clase =" cabeza " >
+
+         < div  clase =" logotipo " >
+            < a  herf =" a " > logotipo </ a >
+
+         </div> _ _
+         
+         < br >
+
+         < clase de navegación  =" barra de navegación " >
+              < a  href =" https://skmedix.pl/sklauncher/downloads " > Lanzador de Java </ a >
+              < a  href =" a " > Puerto </ a >
+              < a  href =" a " > IP de Java </ a >
+              < a  href =" https://discord.gg/fXgD4Pd7 " > Discordia </ a >
+         </ nav >
+
+
+    </div> _ _
+    < clase de encabezado  =" encabezado de contenido " >
+        < h2  clase =" título " > ServerPro </ h2 >
+        <pag> _ _
+            Este es un servidor multiplataforma(puedes jugar en Java&Bedrook), es un servidor vanila,
+             no cuenta con mods pero tiene algunos
+            pluigns que solo modifican la estetica del tabulador(es solo para la version mas nueva).
+        </ p >   
+
+        < div  class =" btn-home " >
+            < a  href =" https://www.mediafire.com/file/2avokvcyg8vb5b4/Textura.rar/file " class =" btn " > Descarga este archivo si eres de Java </ a >
+            < a  href =" https://www.mediafire.com/file/mkdv9dez276vntx/Textura%25282%2529.rar/file " class =" btn " > Descarga este archivo si eres de Bedrook </ a >
+
+
+        </div> _ _
+
+</ encabezado >
+
+
+< sección >
+ 
+    
+
+</ sección >
+
+< sección  clase =" contenido sobre " >
+
+    < h3  class = " Titulo " > Mas informacion </h3>
+    < a  href ="" < p ="" > < p > </ p >
+
+    </ a > < a  href =" # " class =" btn " > Haga clic en </ a >     
+
+
+</ sección >
+
+< sección  clase =" contenido contacto " >
+     < h2  clase =" título " > Gmail </ h2 >
+     < p > ChingaTuMadreDylan@gmail.com </ p >
+     < br >
+      < clase de figura  =" mapa " >
+        < img  src =" https://www.google.com.mx/maps/place/Guason+Stairs/@40.8357516, " height =" 220px " width =" 100% " alt =" MAPA " >
+      </ figura >
+
+
+
+</ sección >
+
+
+
+
+     
+
+
+
+
+
+</ cuerpo >
+< html  lang =" es " > < encabezado >
+    < juego de caracteres meta  =" UTF-8 " > 
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    
+    < título > ServerPro </ título >
+<!-- Código inyectado por el servidor en vivo -->
+< guión >
+	// <![CDATA[ <-- Para compatibilidad con SVG
+	if  ( 'WebSocket'  en  la ventana )  {
+		( función  ( )  {
+			función  actualizar CSS ( )  {
+				var  hojas  =  [ ] . rebanada _ llamada ( documento . getElementsByTagName ( "enlace" ) ) ;
+				 cabeza  var =  documento . getElementsByTagName ( "cabeza" ) [ 0 ] ;
+				for  ( var  i  =  0 ;  i  <  hojas . longitud ;  ++ i )  {
+					var  elem  =  hojas [ i ] ;
+					var  padre  =  elemento . elemento padre  ||  cabeza ;
+					padre _ removeChild ( elem ) ;
+					varrel  = elemento . _  real ; 
+					if  ( elem . href  &&  typeof  rel  !=  "string"  ||  rel . length  ==  0  ||  rel . toLowerCase ( )  ==  "stylesheet" )  {
+						var  url  =  elemento . href . reemplazar ( / ( & | \? ) _cacheOverride= \d + / ,  '' ) ;
+						elemento _ href  =  url  +  ( url . indexOf ( '?' )  >=  0 ? '&' : '?' )  +  '_cacheOverride='  +  ( nueva  Fecha ( ) . valueOf ( ) ) ;
+					}
+					padre _ agregarNiño ( elemento ) ;
+				}
+			}
+			var  protocolo  =  ventana . ubicación _ protocolo  ===  'http:' ? 'ws://' : 'wss://' ;
+			var  dirección  =  protocolo  +  ventana . ubicación _ anfitrión  +  ventana . ubicación _ nombre de ruta  +  '/ws' ;
+			var  socket  =  nuevo  WebSocket ( dirección ) ;
+			enchufe _ enmensaje  =  función  ( mensaje )  {
+				if  ( msg . data  ==  'reload' )  ventana . ubicación _ recargar ( ) ;
+				else  if  ( msg . data  ==  'refreshcss' )  refreshCSS ( ) ;
+			} ;
+			if  ( almacenamiento de sesión  &&  ! almacenamiento de sesión . getItem ( 'EsEstaPrimeraVez_Registrar_Desde_ServidorLive' ) )  {
+				consola _ log ( 'Recarga en vivo habilitada.' ) ;
+				sesiónAlmacenamiento . setItem ( 'EsEstaPrimeraHora_Registro_Desde_LiveServer' ,  verdadero ) ;
+			}
+		} ) ( ) ;
+	}
+	más  {
+		consola _ error ( 'Actualice su navegador. Este navegador NO es compatible con WebSocket para Live-Reloading.' ) ;
+	}
+	// ]]>
+</ guión >
+< link  rel =" hoja de estilo " href =" http://127.0.0.1:5500/style.css?_cacheOverride=1676104622800 " > </ head >
+< cuerpo >
+
+    < div  clase =" cabeza " >
+
+         < div  clase =" logotipo " >
+            < a  herf =" a " > logotipo </ a >
+
+         </div> _ _
+         
+         < br >
+
+         < clase de navegación  =" barra de navegación " >
+              < a  href =" https://skmedix.pl/sklauncher/downloads " > Lanzador de Java </ a >
+              < a  href =" a " > Puerto </ a >
+              < a  href =" a " > IP de Java </ a >
+              < a  href =" https://discord.gg/fXgD4Pd7 " > Discordia </ a >
+         </ nav >
+
+
+    </div> _ _
+    < clase de encabezado  =" encabezado de contenido " >
+        < h2  clase =" título " > ServerPro </h2 >
+        <_ _
+            Este es un servidor multiplataforma(puedes jugar en Java&Bedrook), es un servidor vanila,
+             no cuenta con mods pero tiene algunos
+            pluigns que solo modifican la estetica del tabulador(es solo para la version mas nueva).
+        </ p >   
+
+        < div  class =" btn-home " >
+            < a  href =" https://www.mediafire.com/file/2avokvcyg8vb5b4/Textura.rar/file " class =" btn " > Descarga este archivo si eres de Java </ a >
+            < a  href =" https://www.mediafire.com/file/mkdv9dez276vntx/Textura%25282%2529.rar/file " class =" btn " > Descarga este archivo si eres de Bedrook </ a >
+
+
+        </div> _ _
+
+</ encabezado >
+
+
+< sección >
+ 
+    
+
+</ sección >
+
+< sección  clase =" contenido sobre " >
+
+    < h3  class = " Titulo " > Mas informacion </h3>
+    <a  href ="" < p ="" > < p > </ p >
+
+    </ a > < a  href =" # " class =" btn " > Haga clic en </ a >     
+
+
+</ sección >
+
+< sección  clase =" contenido contacto " >
+     < h2  clase =" título " > Gmail </ h2 >
+     < p > ChingaTuMadreDylan@gmail.com </ p >
+     < br >
+      < clase de figura  =" mapa " >
+        < img  src =" https://www.google.com.mx/maps/place/Guason+Stairs/@40.8357516, " height =" 220px " width =" 100% " alt =" MAPA " >
+      </ figura >
+
+
+
+</ sección >
+
+
+
+
+     
+
+
+
+
+
+</ cuerpo > </ html >
